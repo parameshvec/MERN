@@ -10,9 +10,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://0.0.0.0:27017/userdb', {
+mongoose.connect('mongodb://mongo:27017/userdb', {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true
 });
 
 const connection = mongoose.connection;
