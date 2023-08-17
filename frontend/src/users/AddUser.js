@@ -39,7 +39,7 @@ function AddUser() {
         validate,
         onSubmit: (values) => {
             try {
-                axios.post('http://localhost:5001/users/add',
+                axios.post('http://localhost:5000/users/add',
                  values
                  ).then((res, error) => {
                     alert(res.data);
